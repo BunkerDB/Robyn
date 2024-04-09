@@ -122,7 +122,7 @@ robyn_clusters <- function(input, dep_var_type,
   top_sols <- .clusters_df(df = cls$df, all_paid, balance = weights, limit, ts_validation)
 
   # Build in-cluster CI with bootstrap
-  ci_list <- confidence_calcs(xDecompAgg, cls, all_paid, dep_var_type, k, cluster_by, ...)
+  ci_list <- confidence_calcs(xDecompAgg=xDecompAgg, cls=cls, all_paid=all_paid, dep_var_type=dep_var_type, k=k, cluster_by=cluster_by, ...)
 
   output <- list(
     # Data and parameters
